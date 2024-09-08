@@ -11,6 +11,11 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        textGray:  '#4F5353',
+        cardBlue: '6DAABD',
+        cardPurple: '8F99C2',
+        cardPink: 'B78799',
+
       },
     },
   },
