@@ -11,10 +11,12 @@ export default function AboutSection() {
           alt="About Section Background"
           layout="fill"
           objectFit="cover"
+
           objectPosition="center"
         />
         <div className="absolute inset-0 flex items-center justify-center">
           <h1 className="text-white text-4xl">Burasi About Kismi</h1>
+          <h2>POG</h2>
         </div>
       </div>
     </div>
