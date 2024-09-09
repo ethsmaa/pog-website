@@ -12,10 +12,10 @@ import { ABOUT_US_DATA } from '@/utils/constants';
 
 export default function AboutSection() {
   return (
-    <div className="relative w-screen h-screen overflow-hidden bg-white">
-      {/* main gradient */}
+<div className="relative w-full h-screen overflow-hidden bg-white">
+{/* main gradient */}
       <div
-        className="absolute top-0 right-0 w-[700px] h-[700px] bg-no-repeat bg-contain opacity-60 md:opacity-100 z-0"
+        className="absolute top-0 right-[-2%] w-[700px] h-[700px] bg-no-repeat bg-contain opacity-60 md:opacity-100 z-0"
         style={{
           backgroundImage: `url(${rightGradient.src})`,
         }}

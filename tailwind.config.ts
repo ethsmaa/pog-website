@@ -15,6 +15,7 @@ const config: Config = {
         cardBlue: '6DAABD',
         cardPurple: '8F99C2',
         cardPink: 'B78799',
+        sponsorBG:'5585B6',
 
       },
     },

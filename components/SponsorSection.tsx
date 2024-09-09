@@ -2,6 +2,8 @@ import React from 'react';
 
 export default function SponsorSection() {
     return (
-       <div className="text-red-600">burasi sponsor kismi</div>
+       <div className="bg-[#5585B6] w-screen h-[511px] flex items-center justify-center">
+          <span className="text-white">burasi sponsor kismi</span>
+       </div>
     );
 }
