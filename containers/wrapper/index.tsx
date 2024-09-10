@@ -8,13 +8,13 @@ import HomeSection from '@/components/HomeSection';
 
 export default function Page() {
     return (
-        <>
+        <div className="w-full">
             <HomeSection />
             <AboutSection />
             <SponsorSection />
             <EventSection />
             <MemberSection />
-        </>
+        </div>
 
     );
 }

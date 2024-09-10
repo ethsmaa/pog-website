@@ -4,16 +4,13 @@ type CardProps = {
     backgroundColor: string;
 };
 
-export default function PageCard({ content, backgroundColor }: CardProps) {
+export const PageCard: React.FC<CardProps> = ({ content, backgroundColor }) => {
     return (
-        
-        <div className="w-fit h-fit py-1 px-5 rounded-full text-white text-base"
-            style={{ backgroundColor }} >
+        <div 
+            className="w-fit h-fit py-1 px-5 rounded-full text-white text-sm md:text-base shadow-[0_4px_4px_rgba(0,0,0,0.25)]"
+            style={{ backgroundColor }}
+        >
             {content}
-                    {/* box-shadow: 0px 25px 43px -22px rgba(125,125,125,0.84);*/}
-
         </div>
-        
-
     );
 }
