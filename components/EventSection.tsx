@@ -23,17 +23,17 @@ export default function EventSection() {
           backgroundImage: `url(${leftGradient.src})`,
         }}
       />
-      <div className="absolute inset-0 flex items-center justify-center">
+      <div className="absolute inset-0 flex pt-2 md:pt-0 md:items-center justify-center">
         <div className='relative z-10 flex flex-col items-center w-full max-w-7xl p-4 md:px-24'>
         
           <div className='flex flex-col self-center items-center md:self-start md:items-start'>
             <PageCard content={EVENTS_DATA.cardContent} backgroundColor="#8F99C2" />
-            <h1 className='text-3xl font-bold my-6 sm:text-5xl'>
+            <h1 className='text-3xl font-bold my-2 md:my-6 sm:text-5xl'>
               {EVENTS_DATA.title}
             </h1>
           </div>
 
-          <div className="w-full space-y-4">
+          <div className="w-full space-y-3 md:space-y-4 mt-3">
             {EVENTS_DATA.eventsArray.map((event) => (
               <EventBox key={event.eventID} event={event} />
             ))}

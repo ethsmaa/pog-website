@@ -1,9 +1,8 @@
-
 export const ABOUT_US_DATA = {
     title: "About Us",
     mainParagraph: "Proje ve Oyun Geliştirme Topluluğu, teknoloji ve yaratıcılığı bir araya getiren dinamik bir topluluktur. Amacımız, oyun geliştirme ve proje yönetimi alanlarında kendini geliştirmek isteyen bireyleri bir araya getirerek bilgi paylaşımını teşvik etmek, ortak projeler oluşturmak ve inovasyonu desteklemektir. ",
     secondaryParagraph: "Üyelerimiz, yazılım geliştirme, oyun tasarımı, grafik sanatları ve proje yönetimi gibi geniş bir yelpazede deneyime sahip olup, her seviyeden katılımcıya açıktır. Topluluğumuzda düzenli olarak atölyeler, seminerler ve etkinlikler düzenleyerek üyelerimizin profesyonel becerilerini artırmalarına ve ilham verici projeler üretmelerine olanak sağlıyoruz. Sizinle birlikte, oyun ve proje geliştirme dünyasında yeni ufuklar keşfetmeyi dört gözle bekliyoruz.",
-    pogLogo: 'about-logo.png',
+    pogLogo: '/images/about-pog.png',
     cardContent: 'Biz kimiz?',
 
     socials: [
@@ -62,5 +61,128 @@ export const EVENTS_DATA = {
             content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         },
         
+    ],
+};
+
+export const MEMBERS_DATA = {
+    title: "Members",
+    cardContent: 'Takımla tanışın',
+    membersArray: [
+        {
+            memberID: 1,
+            name: "Member 1",
+            role: "department",
+            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            image: '/images/unknown-member.svg',
+            linkedinUrl: 'https://www.linkedin.com/a',
+        },
+        {
+            memberID: 2,
+            name: "Member 2",
+            role: "department",
+            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            image: '/images/unknown-member.svg',
+            linkedinUrl: 'https://www.linkedin.com/a',
+        },
+        {
+            memberID: 3,
+            name: "Member 3",
+            role: "department",
+            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            image: '/images/unknown-member.svg',
+            linkedinUrl: 'https://www.linkedin.com/a',
+        },
+        {
+            memberID: 4,
+            name: "Member 4",
+            role: "department",
+            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            image: '/images/unknown-member.svg',
+            linkedinUrl: 'https://www.linkedin.com/a',
+        },
+        {
+            memberID: 5,
+            name: "Member 5",
+            role: "department",
+            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            image: '/images/unknown-member.svg',
+            linkedinUrl: 'https://www.linkedin.com/a',
+        },
+        {
+            memberID: 6,
+            name: "Member 6",
+            role: "department",
+            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            image: '/images/unknown-member.svg',
+            linkedinUrl: 'https://www.linkedin.com/a',
+        },
+        {
+            memberID: 7,
+            name: "Member 7",
+            role: "department",
+            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            image: '/images/unknown-member.svg',
+            linkedinUrl: 'https://www.linkedin.com/a',
+        },
+        {
+            memberID: 8,
+            name: "Member 8",
+            role: "department",
+            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            image: '/images/unknown-member.svg',
+            linkedinUrl: 'https://www.linkedin.com/a',
+        },
+        {
+            memberID: 9,
+            name: "Member 9",
+            role: "department",
+            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            image: '/images/unknown-member.svg',
+            linkedinUrl: 'https://www.linkedin.com/a',
+        },
+        {
+            memberID: 10,
+            name: "Member 10",
+            role: "department",
+            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            image: '/images/unknown-member.svg',
+            linkedinUrl: 'https://www.linkedin.com/a',
+        },
+        {
+            memberID: 11,
+            name: "Member 11",
+            role: "department",
+            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            image: '/images/unknown-member.svg',
+            linkedinUrl: 'https://www.linkedin.com/a',
+        },       {
+            memberID: 12,
+            name: "Member 1",
+            role: "department",
+            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            image: '/images/unknown-member.svg',
+            linkedinUrl: 'https://www.linkedin.com/a',
+        },
+        {
+            memberID: 13,
+            name: "Member 2",
+            role: "department",
+            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            image: '/images/unknown-member.svg',
+            linkedinUrl: 'https://www.linkedin.com/a',
+        },
+        {
+            memberID: 14,
+            name: "Member 3",
+            role: "department",
+            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            image: '/images/unknown-member.svg',
+            linkedinUrl: 'https://www.linkedin.com/a',
+        },
+        
+
+
+
+       
     ],
 };
