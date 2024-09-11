@@ -43,7 +43,7 @@ export default function MemberSection() {
   ); // simdiki sayfada gosterilecek uyeleri al
 
   return (
-    <div className="relative w-screen h-screen overflow-hidden bg-white">
+    <div id='members' className="relative w-screen h-screen overflow-hidden bg-white">
       <div
         className="absolute top-[30%] right-0 w-[700px] h-[800px] bg-no-repeat bg-contain opacity-60 md:opacity-75 z-0"
         style={{
