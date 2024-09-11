@@ -1,5 +1,5 @@
 import React from 'react';
-import PogLogo from '../public/images/pog-navbar.svg';
+import PogLogo from '../public/images/pog-logo-navbar.png';
 import Image from 'next/image';
 
 export const Navbar: React.FC = () => {
