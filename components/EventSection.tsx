@@ -10,7 +10,7 @@ import { PageCard } from './PageCard';
 
 export default function EventSection() {
   return (
-    <div className="relative w-screen min-h-screen overflow-hidden bg-white">
+    <div id='events' className="relative w-screen min-h-screen overflow-hidden bg-white">
       <div
         className="absolute top-[7%] right-[-10%] w-[700px] h-[800px] bg-no-repeat bg-contain opacity-60 md:opacity-80 z-0"
         style={{
