@@ -5,7 +5,6 @@ export default function Home({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <body className="w-full h-fit">
-        <div className="w-full">header</div>
         <main>{children}</main>
         <div className="w-full">footer</div>
       </body>
