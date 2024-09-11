@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 import AboutSection from '@/components/AboutSection';
 import EventSection from '@/components/EventSection';

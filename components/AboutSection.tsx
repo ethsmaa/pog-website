@@ -3,7 +3,6 @@ import Image from 'next/image';
 
 import leftGradient from '../public/images/about-lb.svg';
 import rightGradient from '../public/images/about-rm.svg';
-import pogLogo from '../public/images/about-pog.png';
 
 import { PageCard } from '@/components/PageCard';
 import { ABOUT_US_DATA } from '@/utils/constants';
@@ -32,7 +31,7 @@ export default function AboutSection() {
           <div className='max-w-xl flex flex-col items-center md:items-start'>
             <PageCard content={ABOUT_US_DATA.cardContent} backgroundColor="#6DAABD" />
 
-            <h1 className='text-3xl font-bold py-8 sm:text-5xl'>
+            <h1 className='text-3xl font-bold  my-2 md:my-6 sm:text-5xl'>
               {ABOUT_US_DATA.title}
             </h1>
 
@@ -65,7 +64,7 @@ export default function AboutSection() {
 
           <div className='relative z-10 mt-8 md:mt-0 hidden md:block'>
             <Image
-              src={pogLogo}
+              src={ABOUT_US_DATA.pogLogo}
               alt="pog logo"
               width={350}
               height={350}
