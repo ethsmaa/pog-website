@@ -5,6 +5,7 @@ import EventSection from '@/components/EventSection';
 import MemberSection from '@/components/MemberSection';
 import SponsorSection from '@/components/SponsorSection';
 import HomeSection from '@/components/HomeSection';
+import FooterSection from '@/components/FooterSection';
 
 
 export default function Page() {
@@ -16,6 +17,7 @@ export default function Page() {
             <SponsorSection />
             <EventSection />
             <MemberSection />
+            <FooterSection />
         </div>
 
     );
