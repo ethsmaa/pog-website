@@ -8,7 +8,7 @@ export const ABOUT_US_DATA = {
 };
 
 
-{/* burayi airtable'dan ya da notiondan cekicez ilerleyen kisimlarda ben mock data olusturdum */}
+{/* burayi airtable'dan ya da notiondan cekicez ilerleyen kisimlarda ben mock data olusturdum */ }
 export const EVENTS_DATA = {
     title: "Events",
     cardContent: 'Neler oluyor?',
@@ -37,7 +37,7 @@ export const EVENTS_DATA = {
             date: "04.04.2022",
             content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         },
-        
+
     ],
 };
 
@@ -132,7 +132,7 @@ export const MEMBERS_DATA = {
             content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             image: '/images/unknown-member.svg',
             linkedinUrl: 'https://www.linkedin.com/a',
-        },       {
+        }, {
             memberID: 12,
             name: "Member 1",
             role: "department",
@@ -156,17 +156,17 @@ export const MEMBERS_DATA = {
             image: '/images/unknown-member.svg',
             linkedinUrl: 'https://www.linkedin.com/a',
         },
-        
 
 
 
-       
+
+
     ],
 };
 
 
 export const SOCIAL_DATA = {
-    
+
     socials: [
         {
             name: 'Instagram',
@@ -188,6 +188,33 @@ export const SOCIAL_DATA = {
             src: '/icons/logo-youtube.svg',
             href: 'https://www.youtube.com/channel/a',
         }
-      
+
     ],
+};
+
+export const CONTACT_INFO_DATA = {
+    follow_us: "Bizi takip edin",
+    socials: [
+        {
+            name: 'Instagram',
+            src: '/icons/white-instagram.svg',
+            href: 'https://www.instagram.com/deupog/',
+        },
+        {
+            name: 'LinkedIn',
+            src: '/icons/white-linkedin.svg',
+            href: 'https://www.linkedin.com/a',
+        },
+        {
+            name: 'Youtube',
+            src: '/icons/white-youtube.svg',
+            href: 'https://www.youtube.com/channel/a',
+        }
+
+
+    ],
+    contact_us: "Bize ulaşın",
+    contact_address: ['deu@blablacom', '0532 123 45 67', 'Dokuz Eyül Üniversitesi, İzmir, Türkiye'],
+     
+
 };

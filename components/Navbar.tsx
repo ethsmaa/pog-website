@@ -1,6 +1,7 @@
 import React from 'react';
 import PogLogo from '../public/images/pog-logo-navbar.png';
 import Image from 'next/image';
+import JoinUsButton from './JoinUsButton';
 
 export const Navbar: React.FC = () => {
 
@@ -23,8 +24,8 @@ export const Navbar: React.FC = () => {
                 <a href="#sponsors" className='hover:text-[#11243d]'>Sponsorlar</a>
                 <a href="#events" className='hover:text-[#11243d]'>Etkinlikler</a>
                 <a href="#members" className='hover:text-[#11243d]'>Üyeler</a>
-                <button className='bg-gradient-to-b from-[#F0DBA6] via-[#EABC42] to-[#EABC42] rounded-full p-2
-                 text-black border-black border-2 w-[145px]'>Üye Ol</button>
+                <JoinUsButton />
+                
             </div>
         </div>
     );
