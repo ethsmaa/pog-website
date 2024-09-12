@@ -5,29 +5,6 @@ export const ABOUT_US_DATA = {
     pogLogo: '/images/about-pog.png',
     cardContent: 'Biz kimiz?',
 
-    socials: [
-        {
-            name: 'Instagram',
-            src: '/icons/logo-instagram.svg',
-            href: 'https://www.instagram.com/deupog/',
-        },
-        {
-            name: 'Facebook',
-            src: '/icons/logo-facebook.svg',
-            href: 'https://facebook.com/a',
-        },
-        {
-            name: 'LinkedIn',
-            src: '/icons/logo-linkedin.svg',
-            href: 'https://www.linkedin.com/a',
-        },
-        {
-            name: 'Youtube',
-            src: '/icons/logo-youtube.svg',
-            href: 'https://www.youtube.com/channel/a',
-        }
-      
-    ],
 };
 
 
@@ -184,5 +161,33 @@ export const MEMBERS_DATA = {
 
 
        
+    ],
+};
+
+
+export const SOCIAL_DATA = {
+    
+    socials: [
+        {
+            name: 'Instagram',
+            src: '/icons/logo-instagram.svg',
+            href: 'https://www.instagram.com/deupog/',
+        },
+        {
+            name: 'Facebook',
+            src: '/icons/logo-facebook.svg',
+            href: 'https://facebook.com/a',
+        },
+        {
+            name: 'LinkedIn',
+            src: '/icons/logo-linkedin.svg',
+            href: 'https://www.linkedin.com/a',
+        },
+        {
+            name: 'Youtube',
+            src: '/icons/logo-youtube.svg',
+            href: 'https://www.youtube.com/channel/a',
+        }
+      
     ],
 };

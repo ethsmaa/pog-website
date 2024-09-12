@@ -1,16 +1,19 @@
-import React from 'react';
-import Image from 'next/image';
+import React from "react";
+import Image from "next/image";
 
-import leftGradient from '../public/images/about-lb.svg';
-import rightGradient from '../public/images/about-rm.svg';
+import leftGradient from "../public/images/about-lb.svg";
+import rightGradient from "../public/images/about-rm.svg";
 
-import { PageCard } from '@/components/PageCard';
-import { ABOUT_US_DATA } from '@/utils/constants';
+import { PageCard } from "@/components/PageCard";
+import { ABOUT_US_DATA } from "@/utils/constants";
+import { SOCIAL_DATA } from "@/utils/constants";
 
 export default function AboutSection() {
   return (
-    <div id='about' className="relative w-screen min-h-screen overflow-hidden bg-white">
-  
+    <div
+      id="about"
+      className="relative w-screen min-h-screen overflow-hidden bg-white"
+    >
       <div
         className="absolute top-0 right-[1%] w-[700px] h-[700px] bg-no-repeat bg-contain opacity-20 md:opacity-100 z-0"
         style={{
@@ -18,7 +21,6 @@ export default function AboutSection() {
         }}
       />
 
-     
       <div
         className="absolute bottom-[-61%] left-[-17%] w-[700px] h-[700px] bg-no-repeat bg-contain opacity-60 z-0"
         style={{
@@ -27,11 +29,14 @@ export default function AboutSection() {
       />
 
       <div className="absolute inset-0 flex items-center justify-center">
-        <div className='relative z-10 flex flex-col md:flex-row justify-evenly items-center w-full max-w-7xl p-4 md:p-8'>
-          <div className='max-w-xl flex flex-col items-center md:items-start'>
-            <PageCard content={ABOUT_US_DATA.cardContent} backgroundColor="#6DAABD" />
+        <div className="relative z-10 flex flex-col md:flex-row justify-evenly items-center w-full max-w-7xl p-4 md:p-8">
+          <div className="max-w-xl flex flex-col items-center md:items-start">
+            <PageCard
+              content={ABOUT_US_DATA.cardContent}
+              backgroundColor="#6DAABD"
+            />
 
-            <h1 className='text-3xl font-bold  my-2 md:my-6 sm:text-5xl'>
+            <h1 className="text-3xl font-bold  my-2 md:my-6 sm:text-5xl">
               {ABOUT_US_DATA.title}
             </h1>
 
@@ -42,8 +47,8 @@ export default function AboutSection() {
               {ABOUT_US_DATA.secondaryParagraph}
             </p>
 
-            <div className='flex mt-8 gap-4'>
-              {ABOUT_US_DATA.socials.map((social, index) => (
+            <div className="flex mt-8 gap-4">
+              {SOCIAL_DATA.socials.map((social, index) => (
                 <a
                   key={index}
                   href={social.href}
@@ -59,10 +64,9 @@ export default function AboutSection() {
                 </a>
               ))}
             </div>
-
           </div>
 
-          <div className='relative z-10 mt-8 md:mt-0 hidden md:block'>
+          <div className="relative z-10 mt-8 md:mt-0 hidden md:block">
             <Image
               src={ABOUT_US_DATA.pogLogo}
               alt="pog logo"

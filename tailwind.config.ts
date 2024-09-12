@@ -16,6 +16,10 @@ const config: Config = {
         cardPurple: '#8F99C2',
         cardPink: '#B78799',
         sponsorBG:'#5585B6',
+        footerBG:'#082F49',
+        footerCard:'#5585B6',
+        joinButton:'#FFB900',
+
 
       },
     },
