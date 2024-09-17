@@ -1,5 +1,3 @@
-import React from "react";
-
 export const ABOUT_US_DATA = {
   title: "About Us",
   mainParagraph:
@@ -224,6 +222,28 @@ export const TEAM_LINKS_DATA = {
     {
       name: "elif",
       href: "https://github.com/elffba",
+    },
+  ],
+};
+
+
+export const NAVBAR_MENU_DATA = {
+  menuItems: [
+    {
+      name: "Hakkımızda",
+      href: "#about",
+    },
+    {
+      name: "Sponsorlar",
+      href: "#sponsors",
+    },
+    {
+      name: "Etkinlikler",
+      href: "#events",
+    },
+    {
+      name: "Üyeler",
+      href: "#members",
     },
   ],
 };
