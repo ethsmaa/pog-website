@@ -1,5 +1,3 @@
-import React from "react";
-
 export const ABOUT_US_DATA = {
   title: "About Us",
   mainParagraph:
