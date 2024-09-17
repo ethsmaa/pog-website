@@ -225,3 +225,25 @@ export const TEAM_LINKS_DATA = {
     },
   ],
 };
+
+
+export const NAVBAR_MENU_DATA = {
+  menuItems: [
+    {
+      name: "Hakkımızda",
+      href: "#about",
+    },
+    {
+      name: "Sponsorlar",
+      href: "#sponsors",
+    },
+    {
+      name: "Etkinlikler",
+      href: "#events",
+    },
+    {
+      name: "Üyeler",
+      href: "#members",
+    },
+  ],
+};
