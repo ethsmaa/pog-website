@@ -1,18 +1,14 @@
 import React from 'react';
 import Wrapper from '../containers/wrapper';
+import { fetchEvents } from '@/features/notion/fetchEvents';
 
-const fetchFromNotion = async () => {
-    const response = await fetch('http://localhost:3000/api/notion');
-    const data = await response.json();
-    return JSON.parse(data);
-}
 
 export default async function Page() {
-    const rows: rowsStructured = await fetchFromNotion();
+    const rows = await fetchEvents();
 
     return (
         <>
-        <code>{rows[0].first_name}</code>
+        <code>{rows[0].name}</code>
             <Wrapper />
         </>
     );

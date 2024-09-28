@@ -1,4 +1,4 @@
-type rowsStructured = {
-    name: string;
-    first_name: string;
-}[]
+type Member = {
+  name: string;
+  imageUrl?: string;
+}[];
