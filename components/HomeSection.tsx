@@ -1,7 +1,10 @@
 
 import Image from "next/image";
-import allElements from "../public/images/castle-and-clouds.png";
 import { Navbar } from "./Navbar";
+
+
+import allElements from "../public/images/castle-and-clouds.png";
+import pogText from "../public/images/pog-text.png";
 
 export default function HomeSection() {
     return (
@@ -11,6 +14,10 @@ export default function HomeSection() {
 
             <div className="w-full absolute bottom-0">
                 <Image src={allElements} alt="allElements" className="absolute bottom-0 left-0 w-full" />
+            </div>
+
+            <div className="absolute left-1/2 transform -translate-x-1/2 top-[200px]">
+                <Image src={pogText} alt="pogText" width={375} />
             </div>
 
 

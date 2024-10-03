@@ -1,4 +1,11 @@
-type rowsStructured = {
-    name: string;
-    first_name: string;
-}[]
+type Member = {
+  name: string;
+  imageUrl?: string;
+}[];
+
+
+type Event = {
+  header: string;
+  content: string;
+}[];
+ 
