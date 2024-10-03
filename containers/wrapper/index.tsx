@@ -6,19 +6,24 @@ import MemberSection from '@/components/MemberSection';
 import SponsorSection from '@/components/SponsorSection';
 import HomeSection from '@/components/HomeSection';
 import FooterSection from '@/components/FooterSection';
+import { fetchEvents } from '@/features/notion/fetchEvents';
 
 
-export default function Page() {
+// eslint-disable-next-line @next/next/no-async-client-component
+export default async function Page() {
+    const eventsData = await fetchEvents(); // Notion'dan event verilerini çekiyoruz
+
+    
+
     return (
         <div className="w-full">
-        
             <HomeSection />
             <AboutSection />
             <SponsorSection />
-            <EventSection />
+            {/* EventSection'a fetched data'yı props olarak geçiyoruz */}
+            <EventSection events={eventsData} />
             <MemberSection />
             <FooterSection />
         </div>
-
     );
 }

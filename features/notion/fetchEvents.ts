@@ -6,17 +6,8 @@ const notionDatabaseId = process.env.NOTION_DATABASE_ID;
 const notion = new Client({ auth: notionSecret });
 
 type Row = {
-  first_name: { id: string; rich_text: { text: { content: string } }[] };
-  name: { id: string; title: { text: { content: string } }[] };
-  image: {
-    id: string;
-    files: {
-      name: string;
-      file: {
-        url: string;
-      };
-    }[];
-  };
+  header: { id: string; title: { text: { content: string } }[] };
+  content: { id: string; rich_text: { text: { content: string } }[] };
 };
 
 export const fetchEvents = async () => {
@@ -33,13 +24,12 @@ export const fetchEvents = async () => {
   //@ts-ignore
   const rows = query.results.map((res) => res.properties) as Row[];
 
-  const rowsStructured: Member = rows.map((row) => ({
-    name: row.name.title[0].text.content,
-    first_name: row.first_name.rich_text[0].text.content,
-    imageUrl: row.image.files[0]?.file.url,
+  
+  const rowsStructured: Event = rows.map((row) => ({
+    header: row.header.title[0].text.content,
+    content: row.content.rich_text[0].text.content,
   }));
 
-  console.log(rowsStructured);
 
   return rowsStructured;
 };

@@ -1,14 +1,15 @@
 import React from 'react';
-
 import leftGradient from '../public/images/event-lb.svg';
 import rightGradient from '../public/images/event-rm.svg';
-
-import { EVENTS_DATA } from '@/utils/constants';
 import { EventBox } from './EventBox';
 import { PageCard } from './PageCard';
 
+type Event = {
+  header: string;
+  content: string;
+};
 
-export default function EventSection() {
+export default function EventSection({ events }: { events: Event[] }) {
   return (
     <div id='events' className="relative w-screen min-h-screen overflow-hidden bg-white">
       <div
@@ -27,15 +28,15 @@ export default function EventSection() {
         <div className='relative z-10 flex flex-col items-center w-full max-w-7xl p-4 md:px-24'>
         
           <div className='flex flex-col self-center items-center md:self-start md:items-start'>
-            <PageCard content={EVENTS_DATA.cardContent} backgroundColor="#8F99C2" />
+            <PageCard content="Upcoming Events" backgroundColor="#8F99C2" />
             <h1 className='text-3xl font-bold my-2 md:my-6 sm:text-5xl'>
-              {EVENTS_DATA.title}
+              Our Events
             </h1>
           </div>
 
           <div className="w-full space-y-3 md:space-y-4 mt-3">
-            {EVENTS_DATA.eventsArray.map((event) => (
-              <EventBox key={event.eventID} event={event} />
+            {events.map((event, index) => (
+              <EventBox key={index} event={event} />
             ))}
           </div>
         </div>
