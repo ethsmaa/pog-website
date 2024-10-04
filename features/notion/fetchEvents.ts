@@ -6,8 +6,8 @@ const notionDatabaseId = process.env.NOTION_DATABASE_ID;
 const notion = new Client({ auth: notionSecret });
 
 type Row = {
-  header: { id: string; title: { text: { content: string } }[] };
-  content: { id: string; rich_text: { text: { content: string } }[] };
+  header: { id: string; title: { text: { content: string } }[] }; // name
+  content: { id: string; rich_text: { text: { content: string } }[] }; // first name
 };
 
 export const fetchEvents = async () => {
@@ -24,12 +24,10 @@ export const fetchEvents = async () => {
   //@ts-ignore
   const rows = query.results.map((res) => res.properties) as Row[];
 
-  
-  const rowsStructured: Event = rows.map((row) => ({
-    header: row.header.title[0].text.content,
-    content: row.content.rich_text[0].text.content,
+  const rowsStructured: EventData[] = rows.map((row) => ({
+    header: row.header.title[0].text.content, // name
+    content: row.content.rich_text[0].text.content, // first name
   }));
-
 
   return rowsStructured;
 };

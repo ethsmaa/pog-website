@@ -4,12 +4,8 @@ import rightGradient from '../public/images/event-rm.svg';
 import { EventBox } from './EventBox';
 import { PageCard } from './PageCard';
 
-type Event = {
-  header: string;
-  content: string;
-};
 
-export default function EventSection({ events }: { events: Event[] }) {
+export default function EventSection({ events }: { events: EventData[] }) {
   return (
     <div id='events' className="relative w-screen min-h-screen overflow-hidden bg-white">
       <div

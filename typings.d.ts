@@ -4,8 +4,8 @@ type Member = {
 }[];
 
 
-type Event = {
+type EventData = {
   header: string;
   content: string;
-}[];
+};
  
