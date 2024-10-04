@@ -20,7 +20,6 @@ export default async function Page() {
             <HomeSection />
             <AboutSection />
             <SponsorSection />
-            {/* EventSection'a fetched data'yı props olarak geçiyoruz */}
             <EventSection events={eventsData} />
             <MemberSection />
             <FooterSection />

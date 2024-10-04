@@ -61,7 +61,7 @@ export default function MemberSection() {
       <div className="absolute inset-0 flex flex-col items-center justify-start md:justify-center">
         <div className="relative z-10 flex flex-col items-center w-full max-w-7xl p-2 md:px-24">
           <div className="flex flex-col self-center items-center md:self-start md:items-start mb-8">
-            <PageCard content={MEMBERS_DATA.cardContent} backgroundColor="#B88798" />
+            <PageCard content={MEMBERS_DATA.cardContent} backgroundColor="#e1b790" />
             <h1 className="text-3xl font-bold mt-2 md:mt-6 sm:text-5xl">Üyelerimiz</h1>
           </div>
 
