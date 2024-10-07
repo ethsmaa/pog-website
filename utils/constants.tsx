@@ -136,39 +136,23 @@ export const SOCIAL_DATA = {
     {
       name: "LinkedIn",
       src: "/icons/logo-linkedin.svg",
-      href: "https://www.linkedin.com/a",
+      href: "https://www.linkedin.com/company/deupog",
     },
     {
       name: "Youtube",
       src: "/icons/logo-youtube.svg",
-      href: "https://www.youtube.com/channel/a",
+      href: "https://www.youtube.com/@POGDEU",
     },
   ],
 };
 
 export const CONTACT_INFO_DATA = {
   follow_us: "Bizi takip edin",
-  socials: [
-    {
-      name: "Instagram",
-      src: "/icons/white-instagram.svg",
-      href: "https://www.instagram.com/deupog/",
-    },
-    {
-      name: "LinkedIn",
-      src: "/icons/white-linkedin.svg",
-      href: "https://www.linkedin.com/a",
-    },
-    {
-      name: "Youtube",
-      src: "/icons/white-youtube.svg",
-      href: "https://www.youtube.com/channel/a",
-    },
-  ],
+  socials: SOCIAL_DATA.socials,
   contact_us: "Bize ulaşın",
   contact_address: [
-    "deu@blablacom",
-    "0532 123 45 67",
+    "iletisim.pog@gmail.com",
+    "linktr.ee/deupog",
     "Dokuz Eyül Üniversitesi, İzmir, Türkiye",
   ],
 };

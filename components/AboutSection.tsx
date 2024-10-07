@@ -36,7 +36,7 @@ export default function AboutSection() {
               backgroundColor="#6DAABD"
             />
 
-            <h1 className="text-3xl font-bold  my-2 md:my-6 sm:text-5xl">
+            <h1 className="text-3xl font-bold mb-2 my-2 md:my-6 sm:text-5xl">
               {ABOUT_US_DATA.title}
             </h1>
 
