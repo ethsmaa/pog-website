@@ -15,7 +15,7 @@ export default function Page({ events }: { events: EventData[] }) {
             <HomeSection />
             <AboutSection />
             <SponsorSection />
-            <EventSection events={events} /> {/* Verileri EventSection'a geçirin */}
+            <EventSection events={events} /> 
             <MemberSection />
             <FooterSection />
         </div>
