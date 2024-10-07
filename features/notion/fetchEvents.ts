@@ -8,6 +8,7 @@ const notion = new Client({ auth: notionSecret });
 type Row = {
   header: { id: string; title: { text: { content: string } }[] }; // name
   content: { id: string; rich_text: { text: { content: string } }[] }; // first name
+  date : { id: string; date: { start: string }}; // date
 };
 
 export const fetchEvents = async () => {
@@ -27,6 +28,8 @@ export const fetchEvents = async () => {
   const rowsStructured: EventData[] = rows.map((row) => ({
     header: row.header.title[0].text.content, // name
     content: row.content.rich_text[0].text.content, // first name
+    date: row.date.date.start, // date
+
   }));
 
   return rowsStructured;

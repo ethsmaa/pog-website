@@ -1,3 +1,4 @@
+
 import React from 'react';
 import leftGradient from '../public/images/event-lb.svg';
 import rightGradient from '../public/images/event-rm.svg';

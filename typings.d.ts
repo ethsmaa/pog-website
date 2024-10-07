@@ -7,5 +7,6 @@ type Member = {
 type EventData = {
   header: string;
   content: string;
+  date: string;
 };
  

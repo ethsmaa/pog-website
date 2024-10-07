@@ -14,7 +14,7 @@ const config: Config = {
         textGray:  '#4F5353',
         cardBlue: '#6DAABD',
         cardPurple: '#8F99C2',
-        cardPink: '#B78799',
+        cardPink: '#e1b790',
         sponsorBG:'#5585B6',
         footerBG:'#082F49',
         footerCard:'#5585B6',
