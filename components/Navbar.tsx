@@ -14,7 +14,7 @@ export const Navbar: React.FC = () => {
     };
 
     return (
-        <div className="w-full flex justify-between p-4 text-white text-xl font-medium relative">
+        <div className="w-full flex justify-between p-4 text-white text-xl font-medium relative z-40">
             <div className="z-40 fixed left-4 top-4">
                 <Image
                     src={PogLogo}
