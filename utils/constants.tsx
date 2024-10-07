@@ -118,15 +118,6 @@ export const MEMBERS_DATA = {
       image: "/images/unknown-member.svg",
       linkedinUrl: "https://www.linkedin.com/a",
     },
-    {
-      memberID: 10,
-      name: "Member 10",
-      role: "department",
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      image: "/images/unknown-member.svg",
-      linkedinUrl: "https://www.linkedin.com/a",
-    },
-
   ],
 };
 
