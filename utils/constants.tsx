@@ -126,38 +126,7 @@ export const MEMBERS_DATA = {
       image: "/images/unknown-member.svg",
       linkedinUrl: "https://www.linkedin.com/a",
     },
-    {
-      memberID: 11,
-      name: "Member 11",
-      role: "department",
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      image: "/images/unknown-member.svg",
-      linkedinUrl: "https://www.linkedin.com/a",
-    },
-    {
-      memberID: 12,
-      name: "Member 1",
-      role: "department",
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      image: "/images/unknown-member.svg",
-      linkedinUrl: "https://www.linkedin.com/a",
-    },
-    {
-      memberID: 13,
-      name: "Member 2",
-      role: "department",
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      image: "/images/unknown-member.svg",
-      linkedinUrl: "https://www.linkedin.com/a",
-    },
-    {
-      memberID: 14,
-      name: "Member 3",
-      role: "department",
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      image: "/images/unknown-member.svg",
-      linkedinUrl: "https://www.linkedin.com/a",
-    },
+
   ],
 };
 

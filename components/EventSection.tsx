@@ -1,4 +1,3 @@
-'use client'
 
 import React from 'react';
 import leftGradient from '../public/images/event-lb.svg';

@@ -1,6 +1,3 @@
-'use client';
-
-import React, { useState, useEffect } from 'react';
 import leftGradient from '../public/images/member-lb.svg';
 import rightGradient from '../public/images/member-rb.svg';
 
@@ -9,38 +6,8 @@ import { MemberCard } from './MemberCard';
 import { PageCard } from './PageCard';
 
 export default function MemberSection() {
-  const [currentPage, setCurrentPage] = useState(0);
-  const [membersPerPage, setMembersPerPage] = useState(10);
-
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth < 1000) { // sm breakpoint
-        setMembersPerPage(9) 
-      } else {
-        setMembersPerPage(10); // 2 satır, her satırda 5 üye
-      }
-    };
-
-    handleResize(); // İlk yükleme için çağır
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize); 
-  }, []); 
-
-  const totalPages = Math.ceil(MEMBERS_DATA.membersArray.length / membersPerPage); // math ceil yukari yuvarlar
-
-  const handlePrevPage = () => {
-    setCurrentPage((prev) => (prev > 0 ? prev - 1 : prev));
-  }; // eger simdiki sayfa 0 degilse bir azalt
-
-  const handleNextPage = () => {
-    setCurrentPage((prev) => (prev < totalPages - 1 ? prev + 1 : prev));
-  }; // eger simdiki sayfa son sayfa degilse bir arttir
 
 
-  const currentMembers = MEMBERS_DATA.membersArray.slice(
-    currentPage * membersPerPage,
-    (currentPage + 1) * membersPerPage
-  ); // simdiki sayfada gosterilecek uyeleri al
 
   return (
     <div id='members' className="relative w-screen h-screen overflow-hidden bg-white">
@@ -66,28 +33,14 @@ export default function MemberSection() {
           </div>
 
           <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 lg:w-full  ">
-            {currentMembers.map((member) => (
-              <MemberCard key={member.memberID} member={member} />
+            {MEMBERS_DATA.membersArray.map((member, index) => (
+              <MemberCard key={index} member={member} />
             ))}
           </div>
 
           <div className="flex w-full mt-4">
-            {currentPage > 0 && (
-              <button
-                onClick={handlePrevPage}
-                className="px-4 py-2 bg-cardPink text-white rounded-full text-xs md:text-base shadow-[0_4px_4px_rgba(0,0,0,0.25)]"
-              >
-                Önceki
-              </button>
-            )}
-            {currentPage < totalPages - 1 && (
-              <button
-                onClick={handleNextPage}
-                className="px-4 py-2 bg-cardPink text-white rounded-full ml-auto text-xs md:text-base shadow-[0_4px_4px_rgba(0,0,0,0.25)]"
-              >
-                Sonraki
-              </button>
-            )}
+
+
           </div>
         </div>
       </div>
