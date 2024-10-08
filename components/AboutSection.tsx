@@ -40,7 +40,7 @@ export default function AboutSection() {
               {ABOUT_US_DATA.title}
             </h1>
 
-            <p className="whitespace-pre-line w-full pb-4 overflow-hidden text-wrap font-medium text-sm sm:text-base px-8 md:px-0">
+            <p className="whitespace-pre-line w-full py-4 md:pt-0 overflow-hidden text-wrap font-medium text-sm sm:text-base px-8 md:px-0">
               {ABOUT_US_DATA.mainParagraph}
             </p>
             <p className="whitespace-pre-line w-full overflow-hidden text-wrap font-light text-textGray text-sm sm:text-base px-8 md:px-0">

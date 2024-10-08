@@ -1,5 +1,5 @@
 export const ABOUT_US_DATA = {
-  title: "About Us",
+  title: "Hakkımızda",
   mainParagraph:
     "Proje ve Oyun Geliştirme Topluluğu, teknoloji ve yaratıcılığı bir araya getiren dinamik bir topluluktur. Amacımız, oyun geliştirme ve proje yönetimi alanlarında kendini geliştirmek isteyen bireyleri bir araya getirerek bilgi paylaşımını teşvik etmek, ortak projeler oluşturmak ve inovasyonu desteklemektir. ",
   secondaryParagraph:
@@ -12,7 +12,7 @@ export const ABOUT_US_DATA = {
   /* burayi airtable'dan ya da notiondan cekicez ilerleyen kisimlarda ben mock data olusturdum */
 }
 export const EVENTS_DATA = {
-  title: "Events",
+  title: "Etkinliklerimiz",
   cardContent: "Neler oluyor?",
   eventsArray: [
     {
@@ -43,8 +43,8 @@ export const EVENTS_DATA = {
 };
 
 export const MEMBERS_DATA = {
-  title: "Members",
-  cardContent: "Takımla tanışın",
+  title: "Üyelerimiz",
+  cardContent: "Takımla Tanışın",
   membersArray: [
     {
       memberID: 1,
@@ -169,7 +169,6 @@ export const TEAM_LINKS_DATA = {
     },
   ],
 };
-
 
 export const NAVBAR_MENU_DATA = {
   menuItems: [

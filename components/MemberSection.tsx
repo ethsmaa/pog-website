@@ -1,16 +1,16 @@
-import leftGradient from '../public/images/member-lb.svg';
-import rightGradient from '../public/images/member-rb.svg';
+import leftGradient from "../public/images/member-lb.svg";
+import rightGradient from "../public/images/member-rb.svg";
 
-import { MEMBERS_DATA } from '@/utils/constants';
-import { MemberCard } from './MemberCard';
-import { PageCard } from './PageCard';
+import { MEMBERS_DATA } from "@/utils/constants";
+import { MemberCard } from "./MemberCard";
+import { PageCard } from "./PageCard";
 
 export default function MemberSection() {
-
-
-
   return (
-    <div id='members' className="relative w-screen h-screen overflow-hidden bg-white">
+    <div
+      id="members"
+      className="relative w-screen h-screen overflow-hidden bg-white"
+    >
       <div
         className="absolute top-[30%] right-0 w-[700px] h-[800px] bg-no-repeat bg-contain opacity-60 md:opacity-75 z-0"
         style={{
@@ -28,8 +28,13 @@ export default function MemberSection() {
       <div className="absolute inset-0 flex flex-col items-center justify-start md:justify-center">
         <div className="relative z-10 flex flex-col items-center w-full max-w-7xl p-2 md:px-24">
           <div className="flex flex-col self-center items-center md:self-start md:items-start mb-8">
-            <PageCard content={MEMBERS_DATA.cardContent} backgroundColor="#e1b790" />
-            <h1 className="text-3xl font-bold mt-2 md:mt-6 sm:text-5xl">Üyelerimiz</h1>
+            <PageCard
+              content={MEMBERS_DATA.cardContent}
+              backgroundColor="#e1b790"
+            />
+            <h1 className="text-3xl font-bold mt-2 md:mt-6 sm:text-5xl">
+              {MEMBERS_DATA.title}
+            </h1>
           </div>
 
           <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 lg:w-full  ">
@@ -38,10 +43,7 @@ export default function MemberSection() {
             ))}
           </div>
 
-          <div className="flex w-full mt-4">
-
-
-          </div>
+          <div className="flex w-full mt-4"></div>
         </div>
       </div>
     </div>
