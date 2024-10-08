@@ -30,7 +30,7 @@ export default function HomeSection() {
       </div>
 
       <div className="absolute left-1/2 transform -translate-x-1/2 top-[200px] z-10">
-        <Image src={pogText} alt="pogText" width={375} />
+        <Image src={pogText} alt="pogText" className="w-96" />
       </div>
 
       {/* clouds */}
@@ -41,7 +41,7 @@ export default function HomeSection() {
           layout="responsive"
           width={3000}
           height={3000}
-          className="block md:hidden min-w-full min-h-full object-cover scale-150 translate-y-[52%]"
+          className="block md:hidden min-w-full min-h-full object-cover scale-150 translate-y-[40%]"
         />
         <Image
           src={clouds}
@@ -50,7 +50,7 @@ export default function HomeSection() {
         />
       </div>
 
-      <div className="absolute left-1/2 transform -translate-x-1/2 top-[400px] z-10">
+      <div className="absolute left-1/2 transform -translate-x-1/2 top-[320px] z-10">
         <button className="bg-[#D5F9FF] text-[#487787] py-3 px-8 rounded-full shadow-lg text-xl font-medium hover:bg-[#487787] hover:text-[#D5F9FF]">
           <a href="#about">Keşfet</a>
         </button>
