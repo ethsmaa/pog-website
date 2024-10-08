@@ -50,8 +50,8 @@ export default function HomeSection() {
         />
       </div>
 
-      <div className="absolute left-1/2 transform -translate-x-1/2 top-[320px] z-10">
-        <button className="bg-[#D5F9FF] text-[#487787] py-3 px-8 rounded-full shadow-lg text-xl font-medium hover:bg-[#487787] hover:text-[#D5F9FF]">
+      <div className="absolute left-1/2 transform -translate-x-1/2 top-[320px] md:top-[400px] z-10">
+        <button className="bg-[#D5F9FF] text-[#487787] py-3 px-8 rounded-full shadow-lg text-l md:text-xl font-medium hover:bg-[#487787] hover:text-[#D5F9FF]">
           <a href="#about">Keşfet</a>
         </button>
       </div>
