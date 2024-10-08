@@ -1,3 +1,4 @@
+import { join } from "path";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -9,6 +10,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        aboutUsPageCard:'#6DAABD',
         background: "var(--background)",
         foreground: "var(--foreground)",
         textGray:  '#4F5353',
@@ -19,6 +21,13 @@ const config: Config = {
         footerBG:'#082F49',
         footerCard:'#5585B6',
         joinButton:'#FFB900',
+        homeGradientFrom:'#38BDF8',
+        homeGradientTo:'#218bb9',
+        joinusGradientFrom:'#F0DBA6',
+        joinusGradientTo:'#EABC42',
+        joinusGradientVia:'#EABC42',
+        footerLine:'#264769',
+        footerContact:'#72A4D6',
 
 
       },
