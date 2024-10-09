@@ -9,7 +9,7 @@ export default function MemberSection() {
   return (
     <div
       id="members"
-      className="relative w-screen h-screen overflow-hidden bg-white"
+      className="relative w-screen h-screen overflow-hidden bg-white dark:bg-gray-900"
     >
       <div
         className="absolute top-[30%] right-0 w-[700px] h-[800px] bg-no-repeat bg-contain opacity-60 md:opacity-75 z-0"
@@ -30,14 +30,14 @@ export default function MemberSection() {
           <div className="flex flex-col self-center items-center md:self-start md:items-start mb-8">
             <PageCard
               content={MEMBERS_DATA.cardContent}
-              backgroundColor="#e1b790"
+              backgroundColor="#e1b790" // Burayı dark mode için güncelleyebilirsiniz.
             />
-            <h1 className="text-3xl font-bold mt-2 md:mt-6 sm:text-5xl">
+            <h1 className="text-3xl font-bold mt-2 md:mt-6 sm:text-5xl text-black dark:text-white">
               {MEMBERS_DATA.title}
             </h1>
           </div>
 
-          <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 lg:w-full  ">
+          <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 lg:w-full">
             {MEMBERS_DATA.membersArray.map((member, index) => (
               <MemberCard key={index} member={member} />
             ))}

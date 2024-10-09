@@ -4,6 +4,10 @@ import Image from "next/image";
 import leftGradient from "../public/images/about-lb.svg";
 import rightGradient from "../public/images/about-rm.svg";
 
+// Dark mode'a uygun resimler (örnek olarak)
+import leftGradientDark from "../public/images/about-lb.svg";
+import rightGradientDark from "../public/images/about-rm.svg";
+
 import { PageCard } from "@/components/PageCard";
 import { ABOUT_US_DATA } from "@/utils/constants";
 import { SOCIAL_DATA } from "@/utils/constants";
@@ -12,19 +16,29 @@ export default function AboutSection() {
   return (
     <div
       id="about"
-      className="relative w-screen min-h-screen overflow-hidden bg-white"
+      className="relative w-screen min-h-screen overflow-hidden bg-white dark:bg-gray-900"
     >
+      {/* Sağdaki arka plan gradyanı */}
       <div
         className="absolute top-0 right-[1%] w-[700px] h-[700px] bg-no-repeat bg-contain opacity-20 md:opacity-100 z-0"
         style={{
-          backgroundImage: `url(${rightGradient.src})`,
+          backgroundImage: `url(${
+            document.documentElement.classList.contains("dark")
+              ? rightGradientDark.src
+              : rightGradient.src
+          })`,
         }}
       />
 
+      {/* Soldaki arka plan gradyanı */}
       <div
         className="absolute bottom-[-61%] left-[-17%] w-[700px] h-[700px] bg-no-repeat bg-contain opacity-60 z-0"
         style={{
-          backgroundImage: `url(${leftGradient.src})`,
+          backgroundImage: `url(${
+            document.documentElement.classList.contains("dark")
+              ? leftGradientDark.src
+              : leftGradient.src
+          })`,
         }}
       />
 
@@ -36,14 +50,14 @@ export default function AboutSection() {
               backgroundColor="#6DAABD"
             />
 
-            <h1 className="text-3xl font-bold mb-2 my-2 md:my-6 sm:text-5xl">
+            <h1 className="text-3xl font-bold mb-2 my-2 md:my-6 sm:text-5xl dark:text-white">
               {ABOUT_US_DATA.title}
             </h1>
 
-            <p className="whitespace-pre-line w-full py-4 md:pt-0 overflow-hidden text-wrap font-medium text-sm sm:text-base px-8 md:px-0">
+            <p className="whitespace-pre-line w-full py-4 md:pt-0 overflow-hidden text-wrap font-medium text-sm sm:text-base px-8 md:px-0 dark:text-gray-300">
               {ABOUT_US_DATA.mainParagraph}
             </p>
-            <p className="whitespace-pre-line w-full overflow-hidden text-wrap font-light text-textGray text-sm sm:text-base px-8 md:px-0">
+            <p className="whitespace-pre-line w-full overflow-hidden text-wrap font-light text-textGray text-sm sm:text-base px-8 md:px-0 dark:text-gray-400">
               {ABOUT_US_DATA.secondaryParagraph}
             </p>
 

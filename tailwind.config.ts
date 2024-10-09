@@ -2,6 +2,7 @@ import { join } from "path";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
+  darkMode: 'class', // Dark mode'u sınıf bazlı yapıyoruz
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -28,11 +29,11 @@ const config: Config = {
         joinusGradientVia:'#EABC42',
         footerLine:'#264769',
         footerContact:'#72A4D6',
-
-
       },
     },
   },
   plugins: [],
+  
 };
+
 export default config;
