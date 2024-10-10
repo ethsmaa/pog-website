@@ -51,22 +51,15 @@ export const Navbar: React.FC = () => {
       </button>
 
       {/* Dark/Light mode switch button with icons positioned to the left of "Hakkında" */}
-      <button
-        onClick={toggleDarkMode}
-        className="absolute right-80 top-4 transform -translate-x-16 bg-gray-200 dark:bg-gray-800 p-2 rounded-full"
-      >
-        {isDarkMode ? (
-          <MdDarkMode size={24} className="text-gray-800 dark:text-white" />
-        ) : (
-          <MdOutlineDarkMode
-            size={24}
-            className="text-gray-800 dark:text-white"
-          />
-        )}
-      </button>
 
       {/* Desktop menu */}
       <div className="flex-1 justify-end space-x-12 items-center hidden md:flex">
+        <button
+          onClick={toggleDarkMode}
+          className="text-3xl hover:text-footerBG"
+        >
+          {isDarkMode ? <MdDarkMode /> : <MdOutlineDarkMode />}
+        </button>
         {NAVBAR_MENU_DATA.menuItems.map((item, index) => (
           <a key={index} href={item.href} className="hover:text-footerBG">
             {item.name}
