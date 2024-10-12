@@ -9,8 +9,8 @@ const FooterSection: React.FC = () => {
   return (
     <footer className="relative flex flex-col items-center">
       <div className="absolute transform -translate-y-1/2 flex flex-col items-center">
-        <div className="bg-footerCard items-center w-fit rounded-full px-3 py-2 border-4 border-footerBG flex space-x-3 text-xs md:text-base">
-          <div className="font-medium">
+        <div className="bg-footerCard dark:bg-gray-900 items-center w-fit rounded-full px-3 py-2 border-4 border-footerBG flex space-x-3 text-xs md:text-base">
+          <div className="font-medium dark:text-white">
             SEN DE ARAMIZA{" "}
             <span className="text-joinButton drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
               KATIL

@@ -128,11 +128,7 @@ export const SOCIAL_DATA = {
       src: "/icons/logo-instagram.svg",
       href: "https://www.instagram.com/deupog/",
     },
-    {
-      name: "Facebook",
-      src: "/icons/logo-facebook.svg",
-      href: "https://facebook.com/a",
-    },
+
     {
       name: "LinkedIn",
       src: "/icons/logo-linkedin.svg",
@@ -176,10 +172,7 @@ export const NAVBAR_MENU_DATA = {
       name: "Hakkımızda",
       href: "#about",
     },
-    {
-      name: "Sponsorlar",
-      href: "#sponsors",
-    },
+
     {
       name: "Etkinlikler",
       href: "#events",
