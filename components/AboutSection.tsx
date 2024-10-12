@@ -4,9 +4,7 @@ import Image from "next/image";
 import leftGradient from "../public/images/about-lb.svg";
 import rightGradient from "../public/images/about-rm.svg";
 
-// Dark mode'a uygun resimler (örnek olarak)
-import leftGradientDark from "../public/images/about-lb.svg";
-import rightGradientDark from "../public/images/about-rm.svg";
+
 
 import { PageCard } from "@/components/PageCard";
 import { ABOUT_US_DATA } from "@/utils/constants";
@@ -18,27 +16,17 @@ export default function AboutSection() {
       id="about"
       className="relative w-screen min-h-screen overflow-hidden bg-white dark:bg-gray-900"
     >
-      {/* Sağdaki arka plan gradyanı */}
-      <div
+          <div
         className="absolute top-0 right-[1%] w-[700px] h-[700px] bg-no-repeat bg-contain opacity-20 md:opacity-100 z-0"
         style={{
-          backgroundImage: `url(${
-            document.documentElement.classList.contains("dark")
-              ? rightGradientDark.src
-              : rightGradient.src
-          })`,
+          backgroundImage: `url(${rightGradient.src})`,
         }}
       />
 
-      {/* Soldaki arka plan gradyanı */}
       <div
         className="absolute bottom-[-61%] left-[-17%] w-[700px] h-[700px] bg-no-repeat bg-contain opacity-60 z-0"
         style={{
-          backgroundImage: `url(${
-            document.documentElement.classList.contains("dark")
-              ? leftGradientDark.src
-              : leftGradient.src
-          })`,
+          backgroundImage: `url(${leftGradient.src})`,
         }}
       />
 
