@@ -2,9 +2,7 @@ import React from "react";
 import leftGradient from "../public/images/event-lb.svg";
 import rightGradient from "../public/images/event-rm.svg";
 
-// Dark mode resimleri (örnek)
-import leftGradientDark from "../public/images/event-lb.svg";
-import rightGradientDark from "../public/images/event-rm.svg";
+
 
 import { EventBox } from "./EventBox";
 import { PageCard } from "./PageCard";
@@ -20,11 +18,7 @@ export default function EventSection({ events }: { events: EventData[] }) {
       <div
         className="absolute top-[7%] right-[-10%] w-[700px] h-[800px] bg-no-repeat bg-contain opacity-60 md:opacity-80 z-0"
         style={{
-          backgroundImage: `url(${
-            document.documentElement.classList.contains("dark")
-              ? rightGradientDark.src
-              : rightGradient.src
-          })`,
+           backgroundImage: `url(${rightGradient.src})`,
         }}
       />
 
@@ -32,11 +26,7 @@ export default function EventSection({ events }: { events: EventData[] }) {
       <div
         className="absolute bottom-[1%] left-[-15%] w-[750px] h-[700px] bg-no-repeat bg-contain opacity-70 z-0"
         style={{
-          backgroundImage: `url(${
-            document.documentElement.classList.contains("dark")
-              ? leftGradientDark.src
-              : leftGradient.src
-          })`,
+          backgroundImage: `url(${leftGradient.src})`,
         }}
       />
 
