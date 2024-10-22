@@ -63,13 +63,12 @@ export default function HomeSection() {
           className="hidden md:block absolute top-[10px]  right-[20px] w-auto h-auto"
         />
       </div>
-
-
-<div className="absolute left-1/2 transform -translate-x-1/2 top-[400px] z-10">
+      <div className="absolute left-1/2 transform -translate-x-1/2 top-[400px] z-10">
   <button className="bg-[#1a264e] dark:bg-white text-white dark:text-gray-900 py-3 px-10 rounded-full shadow-lg text-sm md:text-xl font-medium transform transition-transform duration-300 ease-in-out hover:scale-105 hover:bg-transparent dark:hover:bg-transparent hover:border-2 border-gray-900 hover:text-gray-900 dark:border-white dark:hover:text-white">
     <a href="#about">Keşfet</a>
   </button>
 </div>
+
 
     </section>
   );

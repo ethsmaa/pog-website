@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import leftGradient from "../public/images/event-lb.svg";
 import rightGradient from "../public/images/event-rm.svg";
 
@@ -9,6 +9,8 @@ import { PageCard } from "./PageCard";
 import { EVENTS_DATA } from "@/utils/constants";
 
 export default function EventSection({ events }: { events: EventData[] }) {
+  const [selectedEvent, setSelectedEvent] = useState<number | null>(null); // Seçilen event index'i
+
   return (
     <div
       id="events"
@@ -44,7 +46,15 @@ export default function EventSection({ events }: { events: EventData[] }) {
 
           <div className="w-full space-y-3 md:space-y-4 mt-3">
             {events.map((event, index) => (
-              <EventBox key={index} event={event} />
+              <EventBox
+                key={index}
+                event={event}
+                isSelected={selectedEvent === index}
+                onClick={() =>
+                  setSelectedEvent(selectedEvent === index ? null : index)
+                } // Seçiliyse iptal et, değilse seç
+                isHidden={selectedEvent !== null && selectedEvent !== index} // Seçili olmayanlar görünmez
+              />
             ))}
           </div>
         </div>
