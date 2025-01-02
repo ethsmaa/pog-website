@@ -1,4 +1,4 @@
-import React, { useState } from "react"; 
+import React, { useState } from "react";
 import Image from "next/image";
 import { Navbar } from "./Navbar";
 
@@ -12,6 +12,7 @@ import clouds from "../public/images/cloudsNew.png";
 import mobileClouds from "../public/images/mobile-clouds.png";
 
 import stars from "../public/images/star.png"; // darkmode
+import Link from "next/link";
 
 export default function HomeSection() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -42,7 +43,7 @@ export default function HomeSection() {
       </div>
 
       <div className="absolute left-1/2 transform -translate-x-1/2 top-[200px] md:top-[150px] z-10">
-        <Image src={pogText} alt="pogText" className="w-96"/>
+        <Image src={pogText} alt="pogText" className="w-96" />
       </div>
 
       {/* clouds */}
@@ -64,10 +65,16 @@ export default function HomeSection() {
         />
       </div>
       <div className="absolute left-1/2 transform -translate-x-1/2 top-[400px] z-10">
-  <button className="bg-[#1a264e] dark:bg-white text-white dark:text-gray-900 py-3 px-10 rounded-full shadow-lg text-sm md:text-xl font-medium transform transition-transform duration-300 ease-in-out hover:scale-105 hover:bg-transparent dark:hover:bg-transparent hover:border-2 border-gray-900 hover:text-gray-900 dark:border-white dark:hover:text-white">
-    <a href="#about">Keşfet</a>
-  </button>
-</div>
+        <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-4">
+          <button className="bg-[#1a264e] dark:bg-white text-white dark:text-gray-900 py-3 px-10 rounded-full shadow-lg text-sm md:text-xl font-medium transform transition-transform duration-300 ease-in-out hover:scale-105 hover:bg-transparent dark:hover:bg-transparent hover:border-2 border-gray-900 hover:text-gray-900 dark:border-white dark:hover:text-white">
+            <a href="#about">Keşfet</a>
+          </button>
+          <button className="bg-gradient-to-r from-[#F2C334] via-[#F2A03C] to-[#BC3964] text-white dark:text-gray-900 py-3 px-10 rounded-full shadow-lg text-sm md:text-xl font-medium transform transition-transform duration-300 ease-in-out hover:scale-105 hover:bg-transparent dark:hover:bg-transparent hover:border-2 border-gray-900 hover:text-gray-900 dark:border-white dark:hover:text-white">
+            <Link href="/eggjam">EGG JAM</Link>
+          </button>
+        </div>
+      </div>
+
 
 
     </section>

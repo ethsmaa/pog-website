@@ -15,16 +15,9 @@ type MemberProps = {
 
 export const MemberCard: React.FC<MemberProps> = ({ member }) => {
   return (
-    <div className="bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 p-2 md:p-4 w-fit rounded-md">
-      <Image
-        src={member.image}
-        alt={member.name}
-        width={130}
-        height={130}
-        className="w-[90px] h-[90px] md:w-[130px] md:h-[130px]"
-      />
-
-      <div className="flex justify-between mt-2 md:mt-3">
+    <div className="bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 p-2  rounded-md">
+    
+      <div className="flex justify-between">
         <div>
           <p className="text-[10px] md:text-sm text-black dark:text-white">
             {member.name}
