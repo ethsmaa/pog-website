@@ -20,3 +20,4 @@ export default function JoinUsButton({ className }: JoinUsButtonProps) {
     </a>
   );
 }
+

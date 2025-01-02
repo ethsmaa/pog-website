@@ -30,7 +30,7 @@ export default function MemberSection() {
           <div className="flex flex-col self-center items-center md:self-start md:items-start mb-8">
             <PageCard
               content={MEMBERS_DATA.cardContent}
-              backgroundColor="#e1b790" // Burayı dark mode için güncelleyebilirsiniz.
+              backgroundColor="#e1b790" 
             />
             <h1 className="text-3xl font-bold mt-2 md:mt-6 sm:text-5xl text-black dark:text-white">
               {MEMBERS_DATA.title}
