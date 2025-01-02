@@ -81,7 +81,7 @@ export const MEMBERS_DATA = {
     {
       memberID: 5,
       name: "Elif Başer",
-      role: "Tasarım Ekibi Üyesi",
+      role: "Prodüksiyon Ekibi Üyesi",
       content: "Tasarım süreçlerinde ekip çalışmalarına katkıda bulunur.",
       image: "/images/unknown-member.svg",
       linkedinUrl: "https://www.linkedin.com/in/elif-başer-5576bb246/",
@@ -89,7 +89,7 @@ export const MEMBERS_DATA = {
     {
       memberID: 6,
       name: "Esma Oruç",
-      role: "Tasarım Ekibi Üyesi",
+      role: "Prodüksiyon Ekibi Üyesi",
       content: "Tasarım projelerinde yaratıcı çözümler sunar.",
       image: "/images/unknown-member.svg",
       linkedinUrl: "https://www.linkedin.com/in/esma-oruç-3a537525a/",
