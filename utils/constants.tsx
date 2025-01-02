@@ -56,19 +56,19 @@ export const MEMBERS_DATA = {
     },
     {
       memberID: 2,
-      name: "Safa Gök",
-      role: "Koordinasyon Lideri",
-      content: "Etkinliklerin düzenlenmesi ve ekiplerin koordinasyonu konusunda liderlik yapmaktadır.",
-      image: "/images/unknown-member.svg",
-      linkedinUrl: "https://www.linkedin.com/in/safa-gök-5590431b2/",
-    },
-    {
-      memberID: 3,
       name: "Zafer Berk Karayol",
       role: "Başkan Yardımcısı",
       content: "Başqan'a destek olarak organizasyonun işleyişine katkı sağlar.",
       image: "/images/unknown-member.svg",
       linkedinUrl: "https://www.linkedin.com/in/zafer-berk-karayol/",
+    },
+    {
+      memberID: 3,
+      name: "Safa Gök",
+      role: "Koordinasyon Lideri",
+      content: "Etkinliklerin düzenlenmesi ve ekiplerin koordinasyonu konusunda liderlik yapmaktadır.",
+      image: "/images/unknown-member.svg",
+      linkedinUrl: "https://www.linkedin.com/in/safa-gök-5590431b2/",
     },
     {
       memberID: 4,
@@ -77,6 +77,14 @@ export const MEMBERS_DATA = {
       content: "Prodüksiyon süreçlerinin planlanması ve yürütülmesinden sorumludur.",
       image: "/images/unknown-member.svg",
       linkedinUrl: "https://www.linkedin.com/in/emir-firdevs-650340238/",
+    },
+    {
+      memberID: 9,
+      name: "Agahcan Su",
+      role: "Prodüksiyon Ekibi Üyesi",
+      content: "Prodüksiyon ekibinin çeşitli projelerinde aktif rol alır.",
+      image: "/images/unknown-member.svg",
+      linkedinUrl: "https://www.linkedin.com/in/agahcansu/",
     },
     {
       memberID: 5,
@@ -105,18 +113,10 @@ export const MEMBERS_DATA = {
     {
       memberID: 8,
       name: "Ferhat Aybergüler",
-      role: "Tasarım Ekibi",
+      role: "Tasarım Ekibi Üyesi",
       content: "Tasarım ekibine destek sağlar ve projelere katkıda bulunur.",
       image: "/images/unknown-member.svg",
       linkedinUrl: "https://www.linkedin.com/in/ferhat-aybergüler/",
-    },
-    {
-      memberID: 9,
-      name: "Agahcan Su",
-      role: "Prodüksiyon Ekibi Üyesi",
-      content: "Prodüksiyon ekibinin çeşitli projelerinde aktif rol alır.",
-      image: "/images/unknown-member.svg",
-      linkedinUrl: "https://www.linkedin.com/in/agahcansu/",
     },
   ],
 };
