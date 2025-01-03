@@ -37,7 +37,7 @@ export const fetchEvents = async (): Promise<EventData[]> => {
 
   const rowsStructured: EventData[] = rows.map((row) => ({
     header: row.header.title[0].text.content,
-    content: cleanContent(row.content.rich_text[0].text.content), // Apply cleanContent here
+    content: cleanContent(row.content.rich_text[0].text.content),
     date: row.date.date.start,
   }));
 

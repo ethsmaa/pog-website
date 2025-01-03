@@ -4,9 +4,23 @@ import Image from 'next/image';
 import maskot from '../../public/images/maskot.svg';
 import eggjamNavbar from '../../public/images/eggjamlogo.png';
 import eggjam from '../../public/images/buyukeggjam.png';
+
 import instagram from '../../public/icons/instagramEgg.svg';
 import email from '../../public/icons/mailEgg.svg';
+
+// background image
 import fullBackground from '../../public/images/websitefullbackground2xpng.png';
+
+// sponsor lgoolari
+import furtleGame from '../../public/logos/furtle_white@4x 1.png';
+import teamMachiaveli from '../../public/logos/TM BEYAZ 1.png';
+import depark from '../../public/logos/DEPARK LOGO BEYAZ 1.png';
+import bambu from '../../public/logos/Bambu LOGO-W 1.png';
+import anima from '../../public/logos/deu_anima_logo 1.png';
+import pog from '../../public/logos/POG O VERS2 1.png';
+import otg from '../../public/logos/ogtlogo 1.png';
+import iztech from '../../public/logos/circle 1@2x.png';
+import mcbu from '../../public/logos/mcbu Oyun Tasarımı ve Geliştiricileri Topluluğu logo 1.png';
 
 export default function Page() {
     return (
@@ -19,51 +33,32 @@ export default function Page() {
                 backgroundRepeat: 'no-repeat',
             }}
         >
-
-
             <title>Eggjam</title>
             <meta name="description" content="Eggjam hakkında bilgi alabileceğiniz web sitesi." />
 
-
             {/* Navigation Bar */}
-            <nav className="flex justify-between items-center px-4 py-4 text-[#1F1826] fixed w-full z-40 md:px-10">
-                {/* Logo */}
+            <nav className="flex justify-between items-center px-4 py-4 text-[#1F1826] md:fixed w-full z-40 md:px-10">
                 <div className="flex items-center space-x-3">
-                    <Image src={eggjamNavbar} alt="Logo" width={72} height={25} />
+                    <Image src={eggjamNavbar} alt="Logo" width={80} height={25} />
                 </div>
-
-                {/* Navigation Links */}
-                <div className="hidden md:flex space-x-20 text-lg md:text-xl font-semibold mx-4 md:mx-12">
-                    <a
-                        href="#about"
-                        className="relative hover:after:content-[''] hover:after:block hover:after:w-full hover:after:h-[2px] hover:after:bg-[#1F1826] hover:after:absolute hover:after:left-0 hover:after:bottom-[-2px] transition"
-                    >
-                        Hakkımızda
-                    </a>
-                    <a
-                        href="#contact"
-                        className="relative hover:after:content-[''] hover:after:block hover:after:w-full hover:after:h-[2px] hover:after:bg-[#1F1826] hover:after:absolute hover:after:left-0 hover:after:bottom-[-2px] transition"
-                    >
-                        İletişim
-                    </a>
+                <div className="hidden md:flex space-x-14 text-base md:text-lg font-semibold">
+                    <a href="#about" className="hover:underline">Hakkımızda</a>
+                    <a href="#contact" className="hover:underline">İletişim</a>
                 </div>
             </nav>
 
             {/* Hero Section */}
-            <section className="relative flex flex-col items-center justify-center text-white h-screen px-4 z-10 md:flex-row md:justify-evenly">
-                {/* Left Section (Maskot) */}
+            <section className="relative flex flex-col items-center justify-center text-white h-screen px-4 text-center md:flex-row md:justify-evenly">
                 <div className="flex-shrink-0 mb-8 md:mr-8 md:mb-0">
-                    <Image src={maskot} alt="Maskot" width={300} height={300} className="md:w-[400px] md:h-[400px]" />
+                    <Image src={maskot} alt="Maskot" width={300} height={300} className="w-48 h-48 md:w-[400px] md:h-[400px]" />
                 </div>
-
-                {/* Right Section (Egg Jam Logo and Button) */}
                 <div className="flex flex-col items-center">
-                    <Image src={eggjam} alt="Egg Jam Logo" width={240} height={90} className="mb-4 md:w-[320px] md:h-[135px]" />
+                    <Image src={eggjam} alt="Egg Jam Logo" width={240} height={90} className="mb-4 w-60 h-auto md:w-[320px]" />
                     <a
                         href="https://docs.google.com/forms/d/e/1FAIpQLSco0KRJzjs-dgc2Bltbip9KV-xIQhOORvIyeo4xwkKEJ4Njrg/viewform?usp=header"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="mt-6 px-6 py-2 text-[#F2DCC2] font-semibold rounded-full bg-[#1F1826] border-2 border-[#1F1826] hover:bg-transparent hover:text-black hover:border-black transition active:bg-black active:text-[#F2DCC2] active:border-[#F2DCC2] md:px-8 md:py-3"
+                        className="mt-6 px-6 py-2 text-[#F2DCC2] font-semibold rounded-full bg-[#1F1826] border-2 border-[#1F1826] hover:bg-transparent hover:text-black hover:border-black transition md:px-8 md:py-3"
                     >
                         Aramıza Katıl
                     </a>
@@ -71,13 +66,13 @@ export default function Page() {
             </section>
 
             {/* About Section */}
-            <section id="about" className="relative flex items-center justify-start h-screen px-6 text-black z-10 md:px-16">
-                <div className="max-w-2xl mx-4 md:max-w-4xl md:mx-60">
+            <section id="about" className="relative flex items-center justify-start min-h-screen px-6 py-12 text-black md:px-16">
+                <div className="max-w-2xl mx-auto md:max-w-4xl">
                     <h2 className="text-[#1F1826] text-3xl font-bold mb-6 md:text-5xl md:mb-8">Hakkımızda</h2>
                     <p className="mb-4 text-base leading-relaxed md:text-lg">
                         Merhaba! <br />
                         Biz, <strong>Ege Bölgesi genelindeki</strong> öğrenci topluluklarının bir araya gelerek oluşturduğu kolektif bir oluşumuz.
-                        Amacımız, üniversite öğrencilerini bir araya getirerek oyun geliştirme alanında yaratıcılığı,
+                        Amacımız, üniversite öğrencilerini bir araya getirerek oyun geliştirme alanında yaraticiliği,
                         dayanışmayı ve ekip çalışmasını desteklemek.
                     </p>
                     <p className="mb-4 text-base leading-relaxed md:text-lg">
@@ -95,32 +90,60 @@ export default function Page() {
             </section>
 
             {/* Contact Section */}
-            <section id="contact" className="relative flex items-center justify-start min-h-screen px-6 text-black z-10 md:px-16">
-                <div className="max-w-2xl mx-4 md:max-w-4xl md:mx-60">
-                    <h2 className="text-[#1F1826] text-3xl font-bold mb-6 md:text-5xl md:mb-8">İletişim</h2>
-                    <div className="flex flex-col space-y-4 text-base md:space-y-6 md:text-lg">
-                        {/* Instagram */}
+            <section id="contact" className="relative min-h-screen px-6 py-12 text-black md:px-16">
+                <div className="max-w-2xl mx-auto md:max-w-4xl">
+                    <h2 className="text-[#1F1826] text-3xl font-bold mb-6 md:text-5xl md:mb-8 text-left">İletişim</h2>
+                    <div className="flex flex-col space-y-6">
                         <a
                             href="https://www.instagram.com/eggjamm"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="flex items-center space-x-3 md:space-x-4"
+                            className="flex items-center space-x-3"
                         >
-                            <Image src={instagram} alt="Instagram" width={30} height={30} className="md:w-[40px] md:h-[40px]" />
+                            <Image src={instagram} alt="Instagram" width={30} height={30} />
                             <span>@eggjamm</span>
                         </a>
-                        {/* Email */}
-                        <a
-                            href="mailto:eggjammer@gmail.com"
-                            className="flex items-center space-x-3 md:space-x-4"
-                        >
-                            <Image src={email} alt="Email" width={30} height={30} className="md:w-[40px] md:h-[40px]" />
+                        <a href="mailto:eggjammer@gmail.com" className="flex items-center space-x-3">
+                            <Image src={email} alt="Email" width={30} height={30} />
                             <span>eggjammer@gmail.com</span>
                         </a>
                     </div>
-
                 </div>
             </section>
+            {/*  Logos Section 
+            responsive kodu bu kadar kotu yazmak biz de istemezdik...
+            */}
+            <div className="absolute bottom-0 left-0 right-0 py-8">
+                {/* Mobile View */}
+                <div className="flex flex-wrap justify-around items-end md:hidden">
+                    <Image src={furtleGame} alt="Furtle Game" width={140} height={140} className="m-4" />
+                    <Image src={teamMachiaveli} alt="Team Machiaveli" width={160} height={160} className="m-4" />
+                    <Image src={depark} alt="Depark" width={150} height={150} className="m-4" />
+                    <Image src={bambu} alt="Bambu" width={40} height={40} className="m-4" />
+                    <div className="grid grid-cols-2 gap-4">
+                        <Image src={anima} alt="Grup 34" width={70} height={70} className="m-4" />
+                        <Image src={pog} alt="Grup 34" width={70} height={70} className="m-4" />
+                        <Image src={otg} alt="Grup 34" width={70} height={70} className="m-4" />
+                        <Image src={iztech} alt="Grup 34" width={70} height={70} className="m-4" />
+                        <Image src={mcbu} alt="Grup 34" width={70} height={70} className="m-4" />
+                    </div>
+                </div>
+                {/* Web View */}
+                <div className="hidden md:flex absolute bottom-0 left-0 right-0  flex-wrap justify-around items-end py-8">
+                <Image src={furtleGame} alt="Furtle Game" width={210} height={210} className="m-8" />
+                <Image src={teamMachiaveli} alt="Team Machiaveli" width={280} height={280} className="m-4" />
+                <Image src={depark} alt="Depark" width={240} height={240} className="m-10" />
+                <Image src={bambu} alt="Bambu" width={90} height={90} className="m-4" />
+                <div className=''>
+                    <Image src={anima} alt="Grup 34" width={90} height={90} className="m-8" />
+                    <Image src={pog} alt="Grup 34" width={90} height={90} className="m-8" />
+                    <Image src={otg} alt="Grup 34" width={90} height={90} className="m-8" />
+                    <Image src={iztech} alt="Grup 34" width={90} height={90} className="m-8" />
+                    <Image src={mcbu} alt="Grup 34" width={90} height={90} className="m-8" />
+                </div>
+            </div>
+            </div>
         </div>
+
     );
 }
