@@ -39,7 +39,7 @@ export default function Page() {
             {/* Navigation Bar */}
             <nav className="flex justify-between items-center px-4 py-4 text-[#1F1826] md:fixed w-full z-40 md:px-10">
                 <div className="flex items-center space-x-3">
-                    <Image src={eggjamNavbar} alt="Logo" width={80} height={25} />
+                    <Image src={eggjamNavbar} alt="Logo" width={72} height={25} />
                 </div>
                 <div className="hidden md:flex space-x-14 text-base md:text-lg font-semibold">
                     <a href="#about" className="hover:underline">Hakkımızda</a>
@@ -120,7 +120,7 @@ export default function Page() {
                     <Image src={teamMachiaveli} alt="Team Machiaveli" width={160} height={160} className="m-4" />
                     <Image src={depark} alt="Depark" width={150} height={150} className="m-4" />
                     <Image src={bambu} alt="Bambu" width={40} height={40} className="m-4" />
-                    <div className="grid grid-cols-2 gap-4">
+                    <div className="grid grid-cols-3 gap-2">
                         <Image src={anima} alt="Grup 34" width={70} height={70} className="m-4" />
                         <Image src={pog} alt="Grup 34" width={70} height={70} className="m-4" />
                         <Image src={otg} alt="Grup 34" width={70} height={70} className="m-4" />
