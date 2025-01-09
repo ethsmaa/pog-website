@@ -105,7 +105,7 @@ export default function Page() {
                         </a>
                         <a href="mailto:eggjammer@gmail.com" className="flex items-center space-x-3">
                             <Image src={email} alt="Email" width={30} height={30} />
-                            <span>eggjammer@gmail.com</span>
+                            <span>eggjamer@gmail.com</span>
                         </a>
                     </div>
                 </div>
